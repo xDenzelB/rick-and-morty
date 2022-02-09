@@ -20,5 +20,22 @@ export default function RickDetail() {
   function handleRickAndMortyClick() {
     window.location.href = character.link;
   }
-  return <div></div>;
+  return (
+    <>
+      <Link to='/'>Home</Link>
+      <div className='character-detail' onClick={handleRickAndMortyClick}>
+        <div className='character-data'>
+          <h2>{character.name}</h2>
+          <p>{character.status}</p>
+          <img className='character-img' src={character.image} />
+          <p>{character.species}</p>
+          <p>{character.gender}</p>
+          <p>{character.origin}</p>
+          <p>{character.location}</p>
+
+        </div>
+
+      </div>
+    </>
+  );
 }
