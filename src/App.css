@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.rick-morty {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-box {
+  margin: 10px;
+  border: solid black 3px;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.character-box:hover {
+  opacity: 1;
+}
+
+.character-box p {
+  color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.character-data {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
