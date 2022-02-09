@@ -1,12 +1,13 @@
 import { React, useEffect, useState } from 'react';
 import './App.css';
+import RickList from './RickList';
 import { getAllCharacters } from './services/fetch-utils';
 
 
 export default function RickPage() {
   const [allCharacters, setAllCharacters] = useState([]);
   const [page, setPage] = useState(1);
-  const perPage = 50;
+  const perPage = 5;
 
   useEffect(() => {
     async function fetch() {
@@ -26,5 +27,6 @@ export default function RickPage() {
       <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
       <button onClick={() => setPage(page + 1)}>Previous Page</button>
     </div>
+    <RickList allCharacters={allCharacters} />
   </div>;
 }
