@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.rick-morty {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-box {
+  margin: 10px;
+  border: solid black 3px;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.character-box p {
+  color: white;
+}
