@@ -26,12 +26,12 @@ export default function RickDetail() {
       <div className='character-detail' onClick={handleRickAndMortyClick}>
         <div className='character-data'>
           <h2>{character.name}</h2>
-          <p>{character.status}</p>
+          <p>Status: {character.status}</p>
           <img className='character-img' src={character.image} />
-          <p>{character.species}</p>
-          <p>{character.gender}</p>
-          <p>{character.origin}</p>
-          <p>{character.location}</p>
+          <p>Species: {character.species}</p>
+          <p>Gender: {character.gender}</p>
+          <p>Original Earth: {character.origin}</p>
+          <p>Location: {character.location}</p>
 
         </div>
 

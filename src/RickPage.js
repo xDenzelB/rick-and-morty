@@ -21,12 +21,14 @@ export default function RickPage() {
     fetch();
   }, [page]);
   return <div>
-    <h2>Current Page {page}</h2>
-
-    <div>
-      <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
-      <button onClick={() => setPage(page + 1)}>Previous Page</button>
-    </div>
+    <h1>Rick and Morty Crisis On Infinite Earths</h1>
     <RickList allCharacters={allCharacters} />
+    <div>
+      <footer>
+        <button disabled={page <= 1} onClick={() => setPage(page - 1)}>⬅</button>
+        <h2>Current Page {page}</h2>
+        <button disabled={page >= 4 } onClick={() => setPage(page + 1)}>Next Page</button>
+      </footer>
+    </div>
   </div>;
 }
